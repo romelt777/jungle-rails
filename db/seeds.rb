@@ -21,6 +21,14 @@ end
 
 # Let's do this ...
 
+user1 = User.find_or_create_by! ({
+  first_name: 'Romel',
+  last_name: 'T',
+  email: 'Romel@example.com',
+  password: 'romel'
+})
+
+
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."
