@@ -10,7 +10,9 @@ Rails.application.routes.draw do
     post   :remove_item
   end
 
-  resource :users, only: [:create, :show, :new]
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
 
   resources :orders, only: [:create, :show]
 
