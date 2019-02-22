@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
     puts "yo, #{@product_id}"
     puts @line_item.inspect
     @product = Product.where(id: @product_id)
+    @total_price = 0
     puts "yup, #{@product_quantity}"
     puts "hello, #{@product.inspect}"
   end

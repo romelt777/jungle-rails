@@ -30,6 +30,10 @@
             TOTAL:
           </th>
           <th>
+            <% @product.each_with_index do |item, index| %>
+              <% @total_price += item.price *  @product_quantity[index] %>
+            <% end %>
+            $<%= @total_price %>
           </th>
         </tr>
       </tfoot>
