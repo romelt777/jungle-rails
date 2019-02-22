@@ -2,7 +2,6 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
-    <h1>Order #<%= @line_item %></h1>
   </header>
 
   <div class="order-summary jumbotron">
@@ -20,8 +19,9 @@
         </tr>
       </thead>
       <tbody>
-        <% order_enhanced_cart.each do |item| %>
-          <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+        <% @product.each_with_index do |item, index| %>
+          <%=puts index%>
+          <%= render 'item', product: item, quantity: @product_quantity[index] %>
         <% end %>
       </tbody>
       <tfoot>
@@ -30,7 +30,6 @@
             TOTAL:
           </th>
           <th>
-            <%= order_cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
