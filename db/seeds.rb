@@ -40,6 +40,12 @@ rating3 = Rating.find_or_create_by! ({
   description: "KGB is watching you.",
   rating: 4
 })
+rating4 = Rating.find_or_create_by! ({
+  product_id: 5,
+  user_id: 2,
+  description: "Great for spying",
+  rating: 5
+})
 
 
 ## CATEGORIES

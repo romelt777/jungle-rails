@@ -2,6 +2,7 @@
 
   <header class="page-header">
     <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %></h1>
+
   </header>
 
   <article class="product-detail">
@@ -25,6 +26,25 @@
         </dl>
       </div>
     </div>
+    <table class="table table-bordered">
+      <h3>Reviews</h3>
+      <br>
+      <thead>
+        <tr>
+          <th>Rating</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @review.each do |item| %>
+          <%= render 'review', review: item %>
+        <% end %>
+      </tbody>
+      <tfoot>
+        <tr>
+        </tr>
+      </tfoot>
+    </table>
 
   </article>
 
