@@ -21,11 +21,24 @@ end
 
 # Let's do this ...
 
-user1 = User.find_or_create_by! ({
-  first_name: 'Romel',
-  last_name: 'T',
-  email: 'Romel@example.com',
-  password: 'romel'
+
+rating1 = Rating.find_or_create_by! ({
+  product_id: 3,
+  user_id: 2,
+  description: "",
+  rating: 3
+})
+rating2 = Rating.find_or_create_by! ({
+  product_id: 4,
+  user_id: 2,
+  description: "Great socks. Very warm.",
+  rating: 5
+})
+rating3 = Rating.find_or_create_by! ({
+  product_id: 5,
+  user_id: 2,
+  description: "KGB is watching you.",
+  rating: 4
 })
 
 

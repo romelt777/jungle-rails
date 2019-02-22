@@ -1,6 +1,6 @@
 class Rating < ActiveRecord::Base
-  belongs to :user
-  belongs to :product
+  belongs_to :user
+  belongs_to :product
 
   validates :rating,
     presence: true,
