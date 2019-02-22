@@ -8,6 +8,41 @@
     <h4>Thank you for your order!</h4>
   </div>
 
+  <div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @product.each_with_index do |item, index| %>
+          <%=puts index%>
+          <%= render 'item', product: item, quantity: @product_quantity[index] %>
+        <% end %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">
+            TOTAL:
+          </th>
+          <th>
+            <% @product.each_with_index do |item, index| %>
+              <% @total_price += item.price *  @product_quantity[index] %>
+            <% end %>
+            $<%= @total_price %>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="row">
+  </div>
+
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
