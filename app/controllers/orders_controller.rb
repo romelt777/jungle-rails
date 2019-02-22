@@ -1,16 +1,14 @@
 class OrdersController < ApplicationController
 
   def show
+    puts current_user.inspect
     @order = Order.find(params[:id])
     @line_item = LineItem.where(order_id: params[:id])
     @product_id = @line_item.map { |item| item.product_id}
     @product_quantity = @line_item.map { |item| item.quantity}
-    puts "yo, #{@product_id}"
-    puts @line_item.inspect
     @product = Product.where(id: @product_id)
     @total_price = 0
-    puts "yup, #{@product_quantity}"
-    puts "hello, #{@product.inspect}"
+    UserMailer.send_receipt_email(@current_user).deliver_later
   end
 
   def create
