@@ -1,4 +1,5 @@
 class RatingsController < ApplicationController
+  before_filter :authorize
 
   def create
     puts "come on"
