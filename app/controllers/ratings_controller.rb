@@ -20,4 +20,14 @@ class RatingsController < ApplicationController
       render 'create'
     end
   end
+
+  def destroy
+    puts "aaa,#{params}"
+    puts params[:id]
+    @review = Rating.where({id: params[:id]})
+    puts "time to destroy!!!"
+    puts @review[0].inspect
+    Rating.destroy(params[:id])
+    redirect_to product_path(params[:product_id])
+  end
 end

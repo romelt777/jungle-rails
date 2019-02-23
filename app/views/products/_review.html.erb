@@ -6,7 +6,7 @@
     <%= review.description %>
     <% if current_user %>
       <% if current_user.id == review.user_id%>
-          <%= link_to 'Delete', '/', class: 'btn btn-info', style:"float:right;background-color:red;" %>
+          <%= link_to 'Delete', "#{@product.id}/ratings/#{review.id}", method: :delete, class: 'btn btn-info', style:"float:right;background-color:red;" %>
       <% end %>
     <% end %>
   </td>

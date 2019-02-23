@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root to: 'products#index'
 
   resources :products, only: [:index, :show] do
-    resources :ratings, only: [:create]
+    resources :ratings, only: [:create, :destroy]
   end
+
+  post '/delete_review' => 'ratings#destroy'
 
   resources :categories, only: [:show]
 
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
     post   :add_item
     post   :remove_item
   end
+
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
