@@ -1,4 +1,5 @@
 class RatingsController < ApplicationController
+
   def create
     puts "come on"
     puts params[:rating][:rating]
