@@ -4,8 +4,10 @@
   </td>
   <td>
     <%= review.description %>
-    <% if current_user.id == review.user_id%>
-        <%= link_to 'Delete', '/', class: 'btn btn-info', style:"float:right;background-color:red;" %>
+    <% if current_user %>
+      <% if current_user.id == review.user_id%>
+          <%= link_to 'Delete', '/', class: 'btn btn-info', style:"float:right;background-color:red;" %>
+      <% end %>
     <% end %>
   </td>
 </tr>
