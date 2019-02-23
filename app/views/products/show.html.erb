@@ -41,7 +41,7 @@
       </thead>
       <tbody>
         <% @review.each do |item| %>
-          <%= render 'review', review: item %>
+          <%= render 'review', review: item, current_user: @current_user %>
         <% end %>
       </tbody>
       <tfoot>
