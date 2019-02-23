@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find params[:id]
-    @review = Rating.where({product_id: params[:id]})
+    @review = Rating.where({product_id: params[:id]}).reverse
     @total_rating = 0;
   end
 
