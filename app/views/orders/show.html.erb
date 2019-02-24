@@ -6,6 +6,9 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <% if @current_user %>
+      <h4>Receipt emailed to <%=@current_user.email%></h4>
+    <% end %>
   </div>
 
   <div class="panel panel-default items">

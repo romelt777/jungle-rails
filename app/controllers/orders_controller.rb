@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   def show
     puts current_user.inspect
+    @current_user = current_user
     @order = Order.find(params[:id])
     @line_item = LineItem.where(order_id: params[:id])
     @product_id = @line_item.map { |item| item.product_id}
