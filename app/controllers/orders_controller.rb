@@ -8,7 +8,9 @@ class OrdersController < ApplicationController
     @product_quantity = @line_item.map { |item| item.quantity}
     @product = Product.where(id: @product_id)
     @total_price = 0
-    UserMailer.send_receipt_email(@current_user, @product, @product_quantity, @order).deliver_now
+    if current_user
+      UserMailer.send_receipt_email(@current_user, @product, @product_quantity, @order).deliver_now
+    end
   end
 
   def create
