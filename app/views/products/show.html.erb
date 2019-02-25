@@ -32,24 +32,22 @@
       <% end %>
       <% if @total_rating > 0%>
         <h3>Average Rating: <%= @total_rating.fdiv(@review.length)%></h3>
+        <h3>Reviews</h3>
       <% else %>
         <h3>Not enough reviews for average rating</h3>
-        <h3>Reviews</h3>
       <% end %>
       <br>
-      <thead>
         <% if @total_rating > 0%>
-          <tr>
-            <th>Rating</th>
-            <th>Description</th>
-          </tr>
-        <% end %>
-      </thead>
-      <tbody>
-        <% if @total_rating > 0%>
-          <% @review.each do |item| %>
-            <%= render 'review', review: item, current_user: @current_user %>
-          <% end %>
+          <thead>
+            <tr>
+              <th>Rating</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @review.each do |item| %>
+              <%= render 'review', review: item, current_user: @current_user %>
+            <% end %>
         <% end %>
       </tbody>
       <tfoot>
