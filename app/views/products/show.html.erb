@@ -30,7 +30,11 @@
       <% @review.each do |item| %>
         <% @total_rating += item.rating %>
       <% end %>
-      <h3>Average Rating: <%= @total_rating.fdiv(@review.length)%></h3>
+      <% if @total_rating > 0%>
+        <h3>Average Rating: <%= @total_rating.fdiv(@review.length)%></h3>
+      <% else %>
+        <h3>Not enough reviews for average rating%></h3>
+      <% end %>
       <h3>Reviews</h3>
       <br>
       <thead>
