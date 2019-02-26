@@ -60,6 +60,30 @@ RSpec.describe User, type: :model do
       end
 
     end
+  end
 
+  describe '.authenticate_with_credentials' do
+    before do
+    @user = User.new
+    @user.first_name = 'Romel'
+    @user.last_name = 'Yu'
+    @user.email = 'romel@nba.com'
+    @user.password = '000000'
+    @user.password_confirmation = '000000'
+    @user.save
+  end
+
+    context 'user logging in' do
+      it 'should be valid if email is in wrong case' do
+        # @user1 = User.where(email: 'romel@nba.com', password_digest: '000000')
+        # puts @user.inspect
+        # puts @user1[0].inspect
+        # expect(@user1[0]).to be_valid
+
+        @user = User.where(email: 'romel@nba.com')
+        puts @user.inspect
+        expect(@user[0]).to be_valid
+      end
+    end
   end
 end
