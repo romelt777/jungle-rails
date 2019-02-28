@@ -43,3 +43,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Logged in users can leave reviews, ratings.
 * Logged in users can delete review they created.
 * A visitor to the website can view all reviews and average rating for product.
+
+
