@@ -45,3 +45,19 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * A visitor to the website can view all reviews and average rating for product.
 
 
+## Photo of Project:
+
+- User changing username
+![](https://github.com/romelt777/chattyApp/blob/master/docs/changing_username.png)
+
+- Another user changing a username
+![](https://github.com/romelt777/chattyApp/blob/master/docs/changing_username2.png)
+
+- Message containing gif
+![](https://github.com/romelt777/chattyApp/blob/master/docs/display_gif.png)
+
+- Message containing photo
+![](https://github.com/romelt777/chattyApp/blob/master/docs/display_photo.png)
+
+- Users disconnected
+![](https://github.com/romelt777/chattyApp/blob/master/docs/users_disconnecting.png)
