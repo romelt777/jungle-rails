@@ -34,7 +34,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Restful routes are used for admin category, no unused routes are exposed.
 * Admin routes have HTTP authentication.
 * Admin controllers are extended from a base admin controller to inherit athentication filter.
-* Registration, log-in, log-out.
+* Users can register, log-in, log-out.
+* Users must register with unique email, case insensitive.
+* Specifc validation for register form fields
 * Bcrypt use for password.
 * Order page contains information about order.
 * Email is sent to user (if logged in) with order details, styled in HTML
@@ -43,6 +45,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Logged in users can leave reviews, ratings.
 * Logged in users can delete review they created.
 * A visitor to the website can view all reviews and average rating for product.
+
 
 
 ## Photo of Project:
