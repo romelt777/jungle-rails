@@ -47,17 +47,17 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Photo of Project:
 
-- User changing username
-![](https://github.com/romelt777/chattyApp/blob/master/docs/changing_username.png)
+- Admin Authentication
+![](https://github.com/romelt777/jungle-rails/blob/feature/user-specs/docs/admin_auth.png)
 
-- Another user changing a username
-![](https://github.com/romelt777/chattyApp/blob/master/docs/changing_username2.png)
+- User adding product review
+![](https://github.com/romelt777/jungle-rails/blob/feature/user-specs/docs/adding_review.png)
 
-- Message containing gif
-![](https://github.com/romelt777/chattyApp/blob/master/docs/display_gif.png)
+- User able to delete reviews they created
+![](https://github.com/romelt777/jungle-rails/blob/feature/user-specs/docs/deleting_product_review.png)
 
-- Message containing photo
-![](https://github.com/romelt777/chattyApp/blob/master/docs/display_photo.png)
+- Average rating changing for reviews
+![](https://github.com/romelt777/jungle-rails/blob/feature/user-specs/docs/after_delete.png)
 
-- Users disconnected
-![](https://github.com/romelt777/chattyApp/blob/master/docs/users_disconnecting.png)
+- Sold out badge for products with 0 quantity
+![](https://github.com/romelt777/jungle-rails/blob/feature/user-specs/docs/sold_out_badge.png)
