@@ -55,7 +55,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ![](https://github.com/romelt777/jungle-rails/blob/master/docs/newAuth.png)
 
 - User adding product review
-![](https://github.com/romelt777/jungle-rails/blob/master/docs/adding_review.png)
+![](https://github.com/romelt777/jungle-rails/blob/master/docs/newAddReview.png)
 
 - User able to delete reviews they created
 ![](https://github.com/romelt777/jungle-rails/blob/master/docs/newShowDelete.png)
@@ -65,3 +65,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 - Sold out badge for products with 0 quantity
 ![](https://github.com/romelt777/jungle-rails/blob/master/docs/newSoldOutBadge.png)
+
+- User adding a category 
+![](https://github.com/romelt777/jungle-rails/blob/master/docs/newAddCategory.png)
