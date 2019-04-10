@@ -52,16 +52,16 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ## Photo of Project:
 
 - Admin Authentication
-![](https://github.com/romelt777/jungle-rails/tree/master/docs/newAuth.png)
+![](https://github.com/romelt777/jungle-rails/blob/tree/master/docs/newAuth.png)
 
 - User adding product review
-![](https://github.com/romelt777/jungle-rails/tree/master/docs/adding_review.png)
+![](https://github.com/romelt777/jungle-rails/blob/tree/master/docs/adding_review.png)
 
 - User able to delete reviews they created
-![](https://github.com/romelt777/jungle-rails/tree/master/docs/newShowDelete.png)
+![](https://github.com/romelt777/jungle-rails/blob/tree/master/docs/newShowDelete.png)
 
 - Average rating changing for reviews
-![](https://github.com/romelt777/jungle-rails/tree/master/docs/NewAfterDelete.png)
+![](https://github.com/romelt777/jungle-rails/blob/tree/master/docs/NewAfterDelete.png)
 
 - Sold out badge for products with 0 quantity
-![](https://github.com/romelt777/jungle-rails/tree/master/docs/newSoldOutBadge.png)
+![](https://github.com/romelt777/jungle-rails/blob/tree/master/docs/newSoldOutBadge.png)
